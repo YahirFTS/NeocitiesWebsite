@@ -1,0 +1,327 @@
+.wrapper{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	margin: auto;
+	width: 1300px;
+}
+
+.container{
+	background-image: url('images/darkhourwallpaper2.jpg');
+	height: 100;
+	background-repeat: no-repeat ;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: .9;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+	background-color: #071820;
+
+}
+
+/*glowing blue around the text*/
+p{
+	text-shadow: var(--blue-text-shadow);
+	--blue-text-shadow: 0 0 20px #2a23a1;
+}
+
+
+
+.wrapper>*{
+
+	padding: 10px;
+	margin:10px;
+	flex:1 100%;
+	border-radius: 1px;
+	width: 1300px;
+
+}
+
+.header{
+	background: #071820;
+	height: 120px;	
+	opacity: .8;
+	position: relative;
+}
+
+.imagelogo{
+
+	height: 120;
+}
+
+.footer{
+
+	background: #071820;
+	height: 80px;
+	opacity: .8;
+	color: white;
+}
+
+.main{
+
+	text-align: center;
+	background: #06091d;
+	height: 900px;
+	font-size: 24px;
+	border: 3px solid #c0c4c0;
+	color: #ffff;
+	opacity: .9;
+
+}
+
+#imageprofile{
+
+	height: 190px;
+	width: auto;
+	border: solid 1px #86c073;
+	margin-top: 15px;
+}
+
+/*left sidebar*/
+.aside1{
+
+	background: none;
+	opacity: .9;
+	 height: 1100px;
+	 color: white;
+	 display: block;
+}
+
+/*first box in the left side*/
+.box1{
+	background-color: #1f0713;
+	margin-top: -8px;
+	height: 355px;
+	width: 280px;
+	border: solid lightgreen 1px;
+	position: relative;
+
+}
+
+/*start of the glow effect on the border of the box1*/
+.box1:before{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+
+.box1:after{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(2px);
+}
+
+.box1{
+	background-color: #1f0713;
+	margin-top: -8px;
+	height: 355px;
+	width: 280px;
+	border: solid lightgreen 1px;
+	position: relative;
+
+}
+/*end of the glow effect on the border of the box1*/
+
+/*start of the glow effect on the border of the box2*/
+.box2:before{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -1;
+}
+
+.box2:after{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(2px);
+}
+
+.box2{
+	background-color: #1f0713;
+	margin-top: -8px;
+	height: 355px;
+	width: 280px;
+	border: solid lightgreen 1px;
+	position: relative;
+
+}
+/*end of the glow effect on the border of the box2*/
+
+/*start of the glow effect on the border of the header*/
+.header:before{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #071820;
+	z-index: -1;
+}
+
+.header:after{
+
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: #fff;
+	z-index: -2;
+	filter: blur(30px);
+}
+/*end of the glow effect on the border of the header*/
+
+
+.box2{
+	background-color: #1f0713;
+	margin-top: 14px;
+	height: 355px;
+	width: 280px;
+	border: solid lightgreen 1px;
+}
+
+
+
+.aside2{
+	background: #090d42;
+	color: white;
+	height: 600px;
+	opacity: .9;
+	border: solid lightgreen 1px;
+}
+
+.abox1{
+
+	background: #071f0d;
+	height: 150px;
+	opacity: .9;
+	width: 280px;
+	margin-top: 14px;
+}
+
+.abox2{
+
+	background: #071f0d;
+	height: 300px;
+	opacity: .9;
+	width: 280px;
+	margin-top: 50px;
+}
+
+@media all and (min-width: 800px){
+
+	.main{
+		flex: 3;
+	}
+
+	.aside1{
+		order: 1;
+	}
+
+	.aside2{
+		order: 2;
+	}
+
+	.main{
+		order: 2;
+	}
+
+	.footer{
+		order: 4;
+	}	
+ 
+}
+
+@media all and (min-width: 600px){
+	.aside{
+		flex: 1;
+	}
+}
+
+.updates{
+	height:100px;
+	overflow:auto;
+	background-color:#1b1b1b;
+	border:1px solid white;
+	color:white;
+	padding:7px;
+	margin-top: 450px;
+	opacity: .7;
+}
+
+.updatestitle{
+	border: solid 1px white;
+	position: relative;
+	bottom: -450px;
+
+}
+
+.updatediv{
+	margin-top: 159px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover { text-decoration: none; color:lightblue; }
+a:focus { text-decoration: none; color:darkblue; }
+a:active { text-decoration: none; color:yellowgreen; }
+
+#linered1{
+
+	position: relative;
+	bottom: 20px;
+	width: 1320px;
+	right: 10px;
+
+}
+
+#lineblue1{
+
+	position: relative;
+	bottom: 20px;
+	width: 1320px;
+	right: 10px;
+
+}
+
+
+
